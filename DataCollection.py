@@ -7,6 +7,7 @@ from cvzone.HandTrackingModule import HandDetector
 cap = cv2.VideoCapture(1)
 sensor = HandDetector(maxHands=1)
 
+#Change path according to the class
 folder = "/Users/kylevitayanuvatti/Desktop/HooHacks/Data/Hello"
 imgSize = 224
 offset = 20
