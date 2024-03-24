@@ -1,272 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome CDN link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <!-- Montserrat Google Font link -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <title>Product Landing Page</title>
-
-
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #3e3e3e;
-    background: url(peachybackground.webp) no-repeat 0 0;
-    background-size: cover;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    height: 90px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 64px;
-    font-size: 1.2em;
-    z-index: 2;
-}
-
-.logo {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.4em;
-    letter-spacing: 0.5px;
-}
-
-.logo img {
-    width: 40px;
-    margin-right: 8px;
-}
-
-.menu-list li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 44px;
-    cursor: pointer;
-    transition: color 0.5s;
-}
-
-.menu-list li.active,
-.menu-list li:hover {
-    color: #ff0073;
-}
-
-.main {
-    padding-top: 90px;
-    position: relative;
-    flex: 1;
-    display: flex;
-}
-
-.left {
-    max-width: 50%;
-    padding: 0 64px;
-}
-
-.title {
-    font-size: 2.8em;
-    letter-spacing: 1px;
-    margin: 48px auto;
-}
-
-.title strong {
-    font-size: 1.5em;
-    display: block;
-    line-height: 80px;
-}
-
-.msg {
-    max-width: 80%;
-    font-size: 1em;
-    letter-spacing: 0.7px;
-    line-height: 32px;
-    margin-bottom: 48px;
-}
-
-button.cta {
-    border: none;
-    outline: none;
-    background-color: #fff;
-    color: #ff0073;
-    padding: 18px 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    box-shadow: 7px 12px 20px rgba(0, 0, 0, 0.05);
-    cursor: pointer;
-    transition: background-color 0.5s;
-}
-
-button.cta:hover {
-    background-color: #fdf3f8;
-}
-
-button span {
-    text-transform: uppercase;
-    font-size: 1.3em;
-    letter-spacing: 3px;
-    font-weight: bold;
-}
-
-button.cta i {
-    font-size: 1.7em;
-    margin-left: 16px;
-}
-
-/*  Right Side  */
-
-.right {
-    padding: 40px 0 0 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.right img {
-    max-width: 450px;
-}
-
-.colors {
-    display: flex;
-    border-top: 3px dotted #cf9696;
-}
-
-.colors .item {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 120px;
-    min-height: 180px;
-    padding-top: 40px;
-}
-
-.item img {
-    position: relative;
-    width: 60px;
-    cursor: pointer;
-    transition: width 0.5s;
-}
-
-.item img:hover {
-    width: 70px;
-}
-
-.item .color-selector {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    background-color: #ffffff;
-    width: 16px;
-    height: 16px;
-    transform: translate(-50%, -50%);
-    border: 2px solid #fff;
-    border-radius: 50%;
-}
-
-.item.blue .color-selector {
-    background-color: #ffffff;
-}
-
-.item.yellow .color-selector {
-    background-color: #ffffff;
-}
-
-.item:first-child {
-    transform: translateX(-50%);
-}
-
-.item:last-child {
-    transform: translateX(50%);
-}
-
-.item.active img {
-    width: 130px;
-}
-
-.item.active .color-selector {
-    width: 28px;
-    height: 28px;
-}
-
-.item.active {
-    min-width: 220px;
-}
-
-.additional-info {
-    background-color: #fff;
-    border-radius: 16px;
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    text-align: right;
-    padding: 16px 24px;
-    line-height: 28px;
-    font-size: 1.1em;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-}
-
-    </style>
+    <title>Sunny Glasses - Sign Language Interpreter and Speech-to-Text Glasses</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <div class="logo">
-            <img src="sunnyglasses.png" alt="shoes logo">
-            SunnyGlasses
-        </div>
-
+        <nav>
+            <!-- Navigation Bar -->
+        </nav>
+        <h1>SunnyGlasses</h1>
+        <p>A pair of AI-powered glasses to improve accessibility for the deaf, allowing seamless ASL translation and speech-to-text computerized operations.</p>
     </header>
 
-    <section class="main">
-
-        <section class="left">
-            <p class="title"><strong>Sign Language Interpreter and Speech-to-Text Glasses</strong></p>
-            <p class="msg">A pair of AI-powered glasses to improve accessibility for the deaf, allowing seamless ASL translation and speech-to-text computerized operations.</p>
-            <i class="fas fa-angle-right"></i></button>
-        </section>
-
-        <section class="right">
-            <img id="imgalternate" src="wayfarermodel.png" alt="Shoes">
-            <button onclick="changeImage('sunglass.png')">View Sunglasses</button>
-            <button onclick="changeImage('wayfarermodel.png')">View Model</button>
-            <button onclick="changeImage('wayfarer.png')">View Glass</button>
-            <div class="colors">
-                    <div class="color-selector"></div>
-                    <div class="color-selector"></div>
-
-
-                    <div class="color-selector"></div>
+    <main>
+        <!-- Product Overview -->
+    <section id="product-overview">
+        <div class="overview-container">
+            <div class="overview-image">
+                <img src="sunnyglasses.png" alt="Sunny Glasses">
             </div>
-            <script>
-                function changeImage(fileName) {
-                    let img = document.querySelector("#imgalternate");
-                    img.setAttribute("src", fileName);
-                }
-            </script>
+            <div class="overview-text">
+                <h2>Product Overview</h2>
+                <p>Sunny Glasses are innovative glasses designed to bridge the communication gap for the deaf community, offering sign language interpretation and speech-to-text capabilities.</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Features -->
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Real-time sign language interpretation</li>
+                <li>Speech-to-text conversion displayed as subtitles</li>
+                <li>High-quality audio output for translated speech</li>
+                <li>Comfortable and stylish design</li>
+            </ul>
         </section>
 
-    </section>
-</body>
+        <!-- How It Works -->
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="step">
+                <h3>Step 1: Record Sign Language</h3>
+                <p>Wear Sunny Glasses and start signing. The built-in cameras record your sign language movements.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Interpret and Translate</h3>
+                <p>The glasses interpret your sign language and translate it into English, speaking out loud for others to hear.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Turn Speech to Text</h3>
+                <p>When someone speaks to you, Sunny Glasses convert their speech into text, displaying it as subtitles on the lens.</p>
+            </div>
+        </section>
+        <!-- Finished Product Showcase -->
+<section id="finished-product">
+    <div class="product-container">
+        <div class="product-image">
+            <img src="wayfarer.png" alt="Ray-Ban Wayfarer - Sunny Glasses">
+        </div>
+        <div class="product-text">
+            <h2>What the Product Will Look Like</h2>
+            <p>The ORIGINAL WAYFARER CLASSIC SUNGLASSES have been reimagined to include our cutting-edge technology, allowing seamless communication for the deaf community.</p>
+        </div>
+        <!-- Finished Product Showcase -->
+<section id="finished-product">
+    <div class="product-container">
+        <!-- Existing Product Image and Text -->
+        <!-- ... -->
+    </div>
+    <div class="model-image-container">
+        <img src="wayfarermodel.png" alt="Model wearing Sunny Glasses Wayfarer">
+    </div>
+</section>
 
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <!-- Footer Content -->
+    </footer>
+</body>
 </html>
