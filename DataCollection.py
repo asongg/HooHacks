@@ -4,13 +4,15 @@ import cv2
 from cvzone.HandTrackingModule import HandDetector
 
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 sensor = HandDetector(maxHands=1)
 
 #Change path according to the class
-folder = "/Users/kylevitayanuvatti/Desktop/HooHacks/Data/Hello"
+folder = "/Users/kylevitayanuvatti/Desktop/HooHacks/Data/Assistant"
+
 imgSize = 224
-offset = 20
+offset = 40
+counter = 0
 
 while True:
     #Captures image frame 
@@ -48,6 +50,7 @@ while True:
         else:
             w2 = imgSize
             h2 = int(imgSize * aspectRatio)
+
         xOffset = (imgSize - w2) // 2
         yOffset = (imgSize - h2) // 2
 
@@ -64,5 +67,6 @@ while True:
     #Saves the image when 'i' is pressed or held(used 
     if cv2.waitKey(1) & 0xFF == ord('s'):
         cv2.imwrite(f'{folder}/Image_{time.time()}.jpg', imgWhite)
+        counter =+ 1
 
 
