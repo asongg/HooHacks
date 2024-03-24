@@ -5,7 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Product Landing Page</title>
@@ -105,6 +104,7 @@ button {
     background-color: #ffa500; 
     color: #ffffff; 
     padding: 20px 40px; 
+    margin-top: 10px;
     font-size: 20px; 
     font-weight: bold;
     border: none;
@@ -133,14 +133,22 @@ button.cta i {
 
 
 .right {
-    padding: 40px 0 0 40px;
+    padding: 0px 400px 0 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 100px;
+    position:relative
 }
 
 .right img {
     max-width: 450px;
+    position:relative;
+}
+.bottom {
+    margin-bottom:30px;
+    margin-left: 40px;
+    position:absolute;
+    bottom: 0;
 }
 
 .colors {
@@ -261,10 +269,10 @@ button.cta i {
                 }
             </script>
         </section>
-    <section id="our-story">
-        <h2>Our Story</h2>
-        <img src="grandma.png" alt="Taylor Matricardi's Grandmother" style="transform: scale(0.25); display: block; margin: 0 auto;">
-        <div class="story-text">
+    <section class="bottom">
+        <h2><strong>Our Story</strong></h2>
+        <p>                      </p>
+        <div class="msg">
             <p>Taylor Matricardi's deaf grandmother has been exposed to many challenges and issues that deaf people face on a daily basis that we typically wouldn't think of. Her and her service dog, Sunny, served as the main inspiration for this project. We wanted to create a piece of technology that could aid deaf people, like an automated service dog.</p>
         </div>
     </section>  
