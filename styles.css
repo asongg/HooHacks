@@ -1,92 +1,11 @@
+css
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; 
-    color: #ffffff; 
-}
-
-header, #features, #how-it-works, #finished-product {
-    text-align: center;
-}
-
-h1, h2, h3, p {
-    color: #ffffff; 
-}
-
-a, .cta-button {
-    color: #ffa500; 
-}
 .main {
-    display: block; 
+    display: block;
     width: 100%; 
     clear: both; 
+
 }
-#product-overview {
-    background-color: #1a1a1a; 
-}
-
-#features {
-    background-color: #262626; 
-}
-
-#how-it-works {
-    background-color: #1a1a1a; 
-}
-
-#finished-product {
-    background-color: #262626; 
-    padding: 50px 0;
-}
-
-.product-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.product-image img {
-    max-width: 50%;
-    height: auto;
-    margin-right: 20px;
-}
-
-.product-text {
-    flex: 1;
-}
-
-footer {
-    background-color: #1a1a1a;
-}
-
-/* Responsive behavior */
-@media (max-width: 768px) {
-    .overview-container, .product-container {
-        flex-direction: column;
-    }
-
-    .overview-image img, .product-image img {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .overview-text, .product-text {
-        text-align: center;
-    }
-}
-
-.model-image-container {
-    text-align: center; 
-    padding: 50px 0; 
-}
-
-.model-image-container img {
-    max-width: 100%; 
-    height: auto;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #121212; 
@@ -128,7 +47,7 @@ a, .cta-button {
     justify-content: center;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px;
 }
 
 .product-image img {
@@ -194,8 +113,15 @@ button.cta:active, .button:active {
     padding: 50px 20px;
     background-color: #f8f9fa;
     width: 100%;
-    margin: auto;
+    margin: 20px auto;
     box-sizing: border-box;
+    clear: both; 
+}
+#our-story img {
+    max-width: 50%; 
+    height: auto; 
+    margin: 20px auto; 
+    display: block; 
 }
 #our-story h2 {
     font-size: 2.5em;
@@ -208,21 +134,13 @@ button.cta:active, .button:active {
     color: #333;
     line-height: 1.6;
 }
-.story-text {
+#our-story .story-text {
     background-color: #000;
     color: #fff;
     padding: 20px;
     margin: 20px auto;
     max-width: 80%;
     border-radius: 10px;
-    text-align: left;
-}
-.story-text {
-    background-color: #000; 
-    color: #fff; 
-    padding: 20px;
-    margin: 20px auto; 
-    max-width: 80%; 
-    border-radius: 10px; 
-    text-align: left; 
+    text-align: center;
+    display: block; 
 }

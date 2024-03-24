@@ -29,19 +29,18 @@ body {
 }
 
 header {
-            position: fixed;
-            top: 0;
-            height: 90px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 64px;
-            font-size: 1.2em;
-            z-index: 1000; 
-            background-color: rgba(255, 255, 255, 0.95); 
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-
+    position: fixed; 
+    top: 0;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+    font-size: 1.2em;
+    z-index: 1000; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
      }
 .logo {
     cursor: pointer;
@@ -263,23 +262,12 @@ button.cta i {
             </script>
         </section>
     <section id="our-story">
-    <section>
         <h2>Our Story</h2>
-        <img src="grandma.png" alt="Taylor Matricardi's Grandmother">
+        <img src="grandma.png" alt="Taylor Matricardi's Grandmother" style="transform: scale(0.25); display: block; margin: 0 auto;">
         <div class="story-text">
             <p>Taylor Matricardi's deaf grandmother has been exposed to many challenges and issues that deaf people face on a daily basis that we typically wouldn't think of. Her and her service dog, Sunny, served as the main inspiration for this project. We wanted to create a piece of technology that could aid deaf people, like an automated service dog.</p>
         </div>
-    </section>
-    <script>
-        window.addEventListener('scroll', function() {
-            var storySection = document.getElementById('our-story');
-            var position = storySection.getBoundingClientRect();
-            if(position.top < window.innerHeight && position.bottom >= 0) {
-                storySection.style.opacity = '1';
-                storySection.style.filter = 'blur(0)';
-            }
-        });
-     </script>        
+    </section>  
 </body>
 
 </html>
