@@ -1,2 +1,6 @@
 https://github.com/cvzone/cvzone?tab=readme-ov-file#hand-tracking-module
-https://www.perplexity.ai/
+https://www.perplexity.ai
+https://claude.ai
+https://chat.openai.com/
+https://github.com/google/mediapipe
+https://www.computervision.zone/courses/advance-computer-vision-with-python/
