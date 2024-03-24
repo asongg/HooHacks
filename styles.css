@@ -1,8 +1,8 @@
-/* Dark theme with white text and orange accents */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: #121212; 
+    color: #ffffff; 
 }
 
 header, #features, #how-it-works, #finished-product {
@@ -10,34 +10,31 @@ header, #features, #how-it-works, #finished-product {
 }
 
 h1, h2, h3, p {
-    color: #ffffff; /* White text */
+    color: #ffffff; 
 }
 
 a, .cta-button {
-    color: #ffa500; /* Orange text for links and buttons */
+    color: #ffa500; 
 }
-
-/* Product Overview Section */
+.main {
+    display: block; 
+    width: 100%; 
+    clear: both; 
+}
 #product-overview {
-    background-color: #1a1a1a; /* Slightly lighter dark background for contrast */
-    /* ... other styles remain unchanged ... */
+    background-color: #1a1a1a; 
 }
 
-/* Features Section */
 #features {
-    background-color: #262626; /* Slightly lighter dark background for contrast */
-    /* ... other styles remain unchanged ... */
+    background-color: #262626; 
 }
 
-/* How It Works Section */
 #how-it-works {
-    background-color: #1a1a1a; /* Slightly lighter dark background for contrast */
-    /* ... other styles remain unchanged ... */
+    background-color: #1a1a1a; 
 }
 
-/* New Finished Product Section */
 #finished-product {
-    background-color: #262626; /* Slightly lighter dark background for contrast */
+    background-color: #262626; 
     padding: 50px 0;
 }
 
@@ -60,10 +57,8 @@ a, .cta-button {
     flex: 1;
 }
 
-/* Footer */
 footer {
-    background-color: #1a1a1a; /* Slightly lighter dark background for contrast */
-    /* ... other styles remain unchanged ... */
+    background-color: #1a1a1a;
 }
 
 /* Responsive behavior */
@@ -81,18 +76,153 @@ footer {
         text-align: center;
     }
 }
-/* Finished Product Section */
-#finished-product {
-    /* ... existing styles ... */
-}
 
-/* Model Image Container */
 .model-image-container {
-    text-align: center; /* Center the image if it's not full width */
-    padding: 50px 0; /* Add padding above and below the image */
+    text-align: center; 
+    padding: 50px 0; 
 }
 
 .model-image-container img {
-    max-width: 100%; /* Ensure the image is responsive and doesn't overflow */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: #ffffff; 
+}
+
+header, #features, #how-it-works, #finished-product {
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    color: #ffffff; 
+}
+
+a, .cta-button {
+    color: #ffa500; 
+}
+
+#product-overview {
+    background-color: #1a1a1a; 
+}
+
+#features {
+    background-color: #262626; 
+}
+
+#how-it-works {
+    background-color: #1a1a1a; 
+}
+
+#finished-product {
+    background-color: #262626;
+    padding: 50px 0;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product-image img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-text {
+    flex: 1;
+}
+
+footer {
+    background-color: #1a1a1a; 
+}
+
+@media (max-width: 768px) {
+    .overview-container, .product-container {
+        flex-direction: column;
+    }
+
+    .overview-image img, .product-image img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .overview-text, .product-text {
+        text-align: center;
+    }
+}
+
+.model-image-container {
+    text-align: center; 
+    padding: 50px 0; 
+}
+
+.model-image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+button.cta, .button {
+    background-color: #ffa500; 
+    color: #ffffff; 
+    padding: 20px 40px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+button.cta:hover, .button:hover {
+    background-color: #ffbf00; 
+    transform: scale(1.05); 
+}
+
+button.cta:active, .button:active {
+    transform: scale(0.95); 
+}
+#our-story {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+#our-story h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+} 
+#our-story p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+.story-text {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    text-align: left;
+}
+.story-text {
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px;
+    margin: 20px auto; 
+    max-width: 80%; 
+    border-radius: 10px; 
+    text-align: left; 
 }
